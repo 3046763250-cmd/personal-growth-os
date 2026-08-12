@@ -1,0 +1,5 @@
+[
+  {"group":"Product & Thinking","items":["问题定义","信息架构","数据叙事","持续复盘"],"note":"能力方向 · 待用真实项目验证"},
+  {"group":"Build & Ship","items":["Astro","TypeScript","Semantic HTML","CSS"],"note":"本网站使用 · 项目级证据"},
+  {"group":"Growth Systems","items":["学习追踪","训练记录","目标拆解","进度可视化"],"note":"实践框架 · Example data"}
+]
