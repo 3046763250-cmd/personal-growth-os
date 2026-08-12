@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://example.com/sitemap-index.xml
+Sitemap: https://3046763250-cmd.github.io/personal-growth-os/sitemap-index.xml

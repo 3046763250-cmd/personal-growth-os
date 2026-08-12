@@ -7,5 +7,5 @@
 - 项目的 GitHub、Demo、过程、结果与截图
 - 简历：经历、技能、证书、奖项、语言（没有则明确删除）
 - 确认公开的 Email；LinkedIn、微信等选填渠道
-- 正式域名，并替换全部 `example.com`
+- 正式域名，并替换当前 GitHub Pages 的 `site` / `base` 配置
 - 正式简历 PDF 与头像/项目图片（可选）

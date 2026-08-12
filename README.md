@@ -28,8 +28,8 @@
 
 ## How to change domain
 
-把 `astro.config.mjs` 的 `site` 与 `public/robots.txt` 的 Sitemap 域名替换为正式 HTTPS 域名，再在部署平台绑定域名。
+把 `astro.config.mjs` 的 `site`、`base` 与 `public/robots.txt` 的 Sitemap 地址替换为正式 HTTPS 域名，再在部署平台绑定域名。使用根域名时删除 `base`。
 
 ## How SEO works
 
-Base layout 统一生成 title、description、canonical、Open Graph、Twitter Card 与 Person JSON-LD；Astro sitemap 插件生成 sitemap，`public/robots.txt` 允许抓取。正式上线前必须替换 `example.com`。
+Base layout 统一生成 title、description、canonical、Open Graph、Twitter Card 与 Person JSON-LD；Astro sitemap 插件生成 sitemap，`public/robots.txt` 允许抓取。当前生产地址配置为 GitHub Pages，绑定正式域名后需同步替换。
