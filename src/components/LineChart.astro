@@ -1,0 +1,6 @@
+---
+const { values, label, unit = '', color = '#1a73e8' } = Astro.props;
+const max = Math.max(...values), min = Math.min(...values), span = max-min || 1;
+const points = values.map((v:number,i:number)=>`${(i/(values.length-1))*100},${38-((v-min)/span)*30}`).join(' ');
+---
+<figure class="chart"><figcaption><b>{label}</b><span>{unit}</span></figcaption><svg viewBox="0 0 100 42" role="img" aria-label={`${label}：${values.join('、')} ${unit}`} preserveAspectRatio="none"><path d="M0 38H100" class="axis"/><polyline points={points} fill="none" stroke={color} stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg><p class="sr-only">数据依次为 {values.join('、')} {unit}</p></figure>

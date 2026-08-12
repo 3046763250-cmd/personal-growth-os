@@ -1,0 +1,4 @@
+---
+import Base from '../layouts/Base.astro'; import projects from '../data/projects.json';
+---
+<Base title="项目 · 刘映杰"><section class="page-intro"><p class="eyebrow">PROJECTS</p><h1>作品不是陈列，<br>而是问题解决的证据。</h1></section>{projects.map((p,i)=><article class="case section" id={p.slug}><p class="eyebrow">CASE 0{i+1} · {p.placeholder?'示例案例':'真实案例'}</p><h2>{p.name}</h2><dl><div><dt>Problem</dt><dd>{p.problem}</dd></div><div><dt>Goal</dt><dd>{p.goal}</dd></div><div><dt>My role</dt><dd>{p.role}</dd></div><div><dt>Tools</dt><dd>{p.tools.join(' · ')}</dd></div><div><dt>Result</dt><dd>{p.result}</dd></div><div><dt>What I learned</dt><dd>{p.learned}</dd></div></dl><p class="placeholder">GitHub 与在线 Demo：TODO（部署后补充）</p></article>)}</Base>

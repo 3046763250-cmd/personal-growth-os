@@ -1,0 +1,4 @@
+---
+import Base from '../layouts/Base.astro'; import growth from '../data/growth.json';
+---
+<Base title="生活实验 · 刘映杰"><section class="page-intro"><p class="eyebrow">LIFE LAB</p><h1>身体、球场与厨房，<br>都是能力训练场。</h1><p>本页为 Phase 1 数据结构示例，所有数字均非真实个人成绩。</p></section><section class="life-grid section"><article><i>01</i><h2>Fitness</h2><p>体重、体脂、力量与心肺的长期曲线。</p><b>{growth.fitness.workouts} 次训练 · Example</b></article><article><i>02</i><h2>Basketball</h2><p>投篮、弹跳、冲刺与体能目标的发展时间线。</p><b>{growth.basketball.sessions} 次训练 · Example</b></article><article><i>03</i><h2>Nutrition × Cooking</h2><p>把营养理论落实为能被反复制作的食物。</p><b>菜谱与实验 · TODO</b></article><article><i>04</i><h2>Learning</h2><p>每项学习都记录 Start → Progress → Result。</p><b>{growth.learning.books} 本书 · Example</b></article></section></Base>
